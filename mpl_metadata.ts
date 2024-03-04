@@ -1,4 +1,3 @@
-
 import {Collection, CreateMetadataAccountV3InstructionAccounts, CreateMetadataAccountV3InstructionDataArgs, Creator, MPL_TOKEN_METADATA_PROGRAM_ID, UpdateMetadataAccountV2InstructionAccounts, UpdateMetadataAccountV2InstructionData, Uses, createMetadataAccountV3, updateMetadataAccountV2, findMetadataPda} from "@metaplex-foundation/mpl-token-metadata";
 import * as web3 from "@solana/web3.js";
 import { PublicKey, createSignerFromKeypair, none, signerIdentity, some } from "@metaplex-foundation/umi";
@@ -17,17 +16,17 @@ const INITIALIZE = true;
 
 async function main(){
     console.log("let's name some tokens in 2024!");
-    const myKeypair = loadWalletKey("AndyUCWqhEnEMqHAByoRSHz2mvQxdyXyki9UQ7YCrTBY.json");
-    const mint = new web3.PublicKey("SDTHBG48VGNoGS1U2ArnvMUZ3dxyGr1F4TT1ojD4QDB");
+    const myKeypair = loadWalletKey("kavo4L3v9Qucxqkj2y5AsPjXK9MHd6E9qEMvxGJCwaz.json");
+    const mint = new web3.PublicKey("7VWWLaWBfLXg3k5heFMRK3Ckiv7ufsFSiNtAaZXwYeLW");
 
     const umi = createUmi("https://api.devnet.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        name: "Silly Dragon Token", 
-        symbol: "SDT",
-        uri: "https://raw.githubusercontent.com/loopcreativeandy/video-tutorial-resources/main/metadataUpdate/metadata.json",
+        name: "Kavin", 
+        symbol: "KAV",
+        uri: "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/metadata.json",
     }
     const onChainData = {
         ...ourMetadata,
