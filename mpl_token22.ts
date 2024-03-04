@@ -1,5 +1,5 @@
 
-import { createV1, updateV1 ,Collection, CreateMetadataAccountV3InstructionAccounts, CreateMetadataAccountV3InstructionDataArgs, Creator, MPL_TOKEN_METADATA_PROGRAM_ID, UpdateMetadataAccountV2InstructionAccounts, UpdateMetadataAccountV2InstructionData, Uses, createMetadataAccountV3, updateMetadataAccountV2, findMetadataPda, CreateV1InstructionAccounts, CreateV1InstructionData, TokenStandard, CollectionDetails, PrintSupply, UpdateV1InstructionData, UpdateV1InstructionAccounts, Data} from "@metaplex-foundation/mpl-token-metadata";
+import { createV1, updateV1 ,Collection, Creator, Uses, CreateV1InstructionAccounts, CreateV1InstructionData, TokenStandard, CollectionDetails, PrintSupply, UpdateV1InstructionAccounts, Data} from "@metaplex-foundation/mpl-token-metadata";
 import * as web3 from "@solana/web3.js";
 import { PublicKey, createSignerFromKeypair, none, percentAmount, publicKey, signerIdentity, some } from "@metaplex-foundation/umi";
 import { createUmi } from '@metaplex-foundation/umi-bundle-defaults';
@@ -38,7 +38,6 @@ async function main(){
     if(INITIALIZE){
         const onChainData = {
             ...ourMetadata,
-            // we don't need that
             sellerFeeBasisPoints: percentAmount(0,2),
             creators: none<Creator[]>(),
             collection: none<Collection>(),
