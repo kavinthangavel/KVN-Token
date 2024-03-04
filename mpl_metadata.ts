@@ -24,8 +24,8 @@ async function main(){
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        name: "Kavin", 
-        symbol: "KAV",
+        name: "KavinTestToken", 
+        symbol: "KAVTT",
         uri: "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/metadata.json",
     }
     const onChainData = {
