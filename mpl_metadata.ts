@@ -16,8 +16,8 @@ const INITIALIZE = true;
 
 async function main(){
     console.log("Naming Token");
-    const myKeypair = loadWalletKey("8z68QayZYmDDnAmXR1y79sA5hjC5Lwj1Rnrr5Sv6pHfc.json");
-    const mint = new web3.PublicKey("GtwwPPjeCFoEMJLSQ4hmQQUbHsk15PbAx6QU25UUBZjJ");
+    const myKeypair = loadWalletKey("8z68QayZYmDDnAmXR1y79sA5hjC5Lwj1Rnrr5Sv6pHfc.json"); //Change this to your keypair file
+    const mint = new web3.PublicKey("GtwwPPjeCFoEMJLSQ4hmQQUbHsk15PbAx6QU25UUBZjJ");  //Change this to your mint address
 
     const umi = createUmi("https://api.mainnet-beta.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
