@@ -15,7 +15,7 @@ export function loadWalletKey(keypairFile:string): web3.Keypair {
 const INITIALIZE = true;
 
 async function main(){
-    console.log("let's name some tokens in 2024!");
+    console.log("Naming Token");
     const myKeypair = loadWalletKey("8z68QayZYmDDnAmXR1y79sA5hjC5Lwj1Rnrr5Sv6pHfc.json");
     const mint = new web3.PublicKey("9JRFRgDz5b76RQ5ysQa836SeRbKikSkVTXu9g4oaCYTx");
 
@@ -23,14 +23,13 @@ async function main(){
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
-    const ourMetadata = { // TODO change those values!
+    const ourMetadata = { 
         name: "Kavin", 
-        symbol: "KAV",
+        symbol: "KVN",
         uri: "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/metadata.json",
     }
     const onChainData = {
         ...ourMetadata,
-        // we don't need that
         sellerFeeBasisPoints: 0,
         creators: none<Creator[]>(),
         collection: none<Collection>(),
