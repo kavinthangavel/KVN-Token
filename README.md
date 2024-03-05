@@ -1,6 +1,8 @@
-# SPL Token Management Guide
+# SPL Token-22 Guide
 
-This guide outlines the process for creating and managing SPL tokens on the Solana blockchain, specifically targeting the Devnet for testing purposes. Follow these steps to mint your custom SPL tokens, named here as "Token-22", and connect your paper wallet to the Phantom Wallet for a seamless Solana blockchain experience.
+This guide outlines the process for creating and managing SPL token-2022 on the Solana blockchain, specifically targeting the Devnet for testing purposes. 
+Follow these steps to mint your custom SPL tokens, named here as "Token-22", and 
+connect your paper wallet to the Phantom Wallet for a seamless Solana blockchain experience.
 
 ## Prerequisites
 
