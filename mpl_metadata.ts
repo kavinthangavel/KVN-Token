@@ -16,16 +16,16 @@ const INITIALIZE = true;
 
 async function main(){
     console.log("let's name some tokens in 2024!");
-    const myKeypair = loadWalletKey("kavo4L3v9Qucxqkj2y5AsPjXK9MHd6E9qEMvxGJCwaz.json");
-    const mint = new web3.PublicKey("7VWWLaWBfLXg3k5heFMRK3Ckiv7ufsFSiNtAaZXwYeLW");
+    const myKeypair = loadWalletKey("8z68QayZYmDDnAmXR1y79sA5hjC5Lwj1Rnrr5Sv6pHfc.json");
+    const mint = new web3.PublicKey("9JRFRgDz5b76RQ5ysQa836SeRbKikSkVTXu9g4oaCYTx");
 
-    const umi = createUmi("https://api.devnet.solana.com");
+    const umi = createUmi("https://api.mainnet-beta.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        name: "KavinTestToken", 
-        symbol: "KAVTT",
+        name: "Kavin", 
+        symbol: "KAV",
         uri: "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/metadata.json",
     }
     const onChainData = {

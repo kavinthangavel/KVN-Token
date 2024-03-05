@@ -1,4 +1,3 @@
-
 import { createV1, updateV1 ,Collection, Creator, Uses, CreateV1InstructionAccounts, CreateV1InstructionData, TokenStandard, CollectionDetails, PrintSupply, UpdateV1InstructionAccounts, Data} from "@metaplex-foundation/mpl-token-metadata";
 import * as web3 from "@solana/web3.js";
 import { PublicKey, createSignerFromKeypair, none, percentAmount, publicKey, signerIdentity, some } from "@metaplex-foundation/umi";
@@ -19,7 +18,7 @@ export function loadWalletKey(keypairFile:string): web3.Keypair {
     return loaded;
   }
 
-const INITIALIZE = true;
+const INITIALIZE = false;
 
 async function main(){
     console.log("let's name some token-22 Token!");
