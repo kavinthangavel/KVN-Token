@@ -18,20 +18,20 @@ export function loadWalletKey(keypairFile:string): web3.Keypair {
     return loaded;
   }
 
-const INITIALIZE = false;
+const INITIALIZE = true;
 
 async function main(){
-    console.log("let's name some token-22 Token!");
-    const myKeypair = loadWalletKey("kavo4L3v9Qucxqkj2y5AsPjXK9MHd6E9qEMvxGJCwaz.json");
-    const mint = new web3.PublicKey("LUeCacMd3RmKxLK2jt1tNMJMGF4XSYfGTu5e7RQurqA");
+    console.log("let's name token-22 Token!");
+    const myKeypair = loadWalletKey("KVNmDjP8vhUTCk6toCtLu5gXDurV5CJfX6JGgbrBzsJ.json");
+    const mint = new web3.PublicKey("FF4ePJPUPk6LJS5AqfwtEspE9uu2iCKpjdsQ9QTDRoAt"); //9iyFfxwE4zQYsJazaMX9EFp3saurMrA826QiJfUXsTAT - mainnet token-22
 
     const umi = createUmi("https://api.devnet.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { 
-        name: "Kavin Thangavel", 
-        symbol: "KVT",
+        name: "Kavin", 
+        symbol: "KVN",
         uri: "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/metadata.json",
     }
     if(INITIALIZE){
