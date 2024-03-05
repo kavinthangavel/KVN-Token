@@ -31,8 +31,8 @@ async function main(){
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { // TODO change those values!
-        name: "KavinTest", 
-        symbol: "KAVT",
+        name: "Luffy", 
+        symbol: "MDL",
         uri: "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/metadata.json",
     }
     if(INITIALIZE){
