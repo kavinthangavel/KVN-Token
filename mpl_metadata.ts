@@ -12,7 +12,7 @@ export function loadWalletKey(keypairFile:string): web3.Keypair {
     return loaded;
   }
 
-const INITIALIZE = true;
+const INITIALIZE = true;  //Change this to false if you want to update metadata
 
 async function main(){
     console.log("Naming Token");
