@@ -22,7 +22,7 @@ export function loadWalletKey(keypairFile:string): web3.Keypair {
 const INITIALIZE = true;
 
 async function main(){
-    console.log("let's name some token-22 tokens in 2024!");
+    console.log("let's name some token-22 Token!");
     const myKeypair = loadWalletKey("kavo4L3v9Qucxqkj2y5AsPjXK9MHd6E9qEMvxGJCwaz.json");
     const mint = new web3.PublicKey("LUeCacMd3RmKxLK2jt1tNMJMGF4XSYfGTu5e7RQurqA");
 
