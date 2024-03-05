@@ -19,13 +19,13 @@ async function main(){
     const myKeypair = loadWalletKey("8z68QayZYmDDnAmXR1y79sA5hjC5Lwj1Rnrr5Sv6pHfc.json");
     const mint = new web3.PublicKey("9JRFRgDz5b76RQ5ysQa836SeRbKikSkVTXu9g4oaCYTx");
 
-    const umi = createUmi("https://api.mainnet-beta.solana.com");
+    const umi = createUmi("https://api.devnet.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { 
         name: "Kavin", 
-        symbol: "KVN",
+        symbol: "KN",
         uri: "https://raw.githubusercontent.com/kavinthangavel/KVN-Token/main/metadata.json",
     }
     const onChainData = {
