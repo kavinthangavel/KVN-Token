@@ -1,6 +1,10 @@
 {
-    "name": "Luffy",
-    "symbol": "MDL",
-    "description": "Luffy is a decentralized digital currency",
-    "image": "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/testlogo.jpg"
+  "name": "Luffy",
+  "symbol": "MDL",
+  "description": "Luffy is a decentralized digital currency",
+  "image": "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/luffy.png",
+  "extensions": {
+    "website": "https://kavinthangavel.tech",
+    "twitter": "https://twitter.com/kxvinthxngxvel"
   }
+}
