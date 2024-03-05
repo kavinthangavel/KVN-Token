@@ -19,18 +19,18 @@ export function loadWalletKey(keypairFile:string): web3.Keypair {
     return loaded;
   }
 
-const INITIALIZE = false;
+const INITIALIZE = true;
 
 async function main(){
     console.log("let's name some token-22 tokens in 2024!");
     const myKeypair = loadWalletKey("kavo4L3v9Qucxqkj2y5AsPjXK9MHd6E9qEMvxGJCwaz.json");
-    const mint = new web3.PublicKey("KTBR2PH2MXWWsrkUgHrXKepRPzvtbtppnM9CysvF1kv");
+    const mint = new web3.PublicKey("LUeCacMd3RmKxLK2jt1tNMJMGF4XSYfGTu5e7RQurqA");
 
     const umi = createUmi("https://api.devnet.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
-    const ourMetadata = { // TODO change those values!
+    const ourMetadata = { 
         name: "Luffy", 
         symbol: "MDL",
         uri: "https://raw.githubusercontent.com/kavinthangavel/KAV-Token/main/metadata.json",
