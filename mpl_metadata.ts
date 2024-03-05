@@ -17,15 +17,15 @@ const INITIALIZE = true;
 async function main(){
     console.log("Naming Token");
     const myKeypair = loadWalletKey("8z68QayZYmDDnAmXR1y79sA5hjC5Lwj1Rnrr5Sv6pHfc.json");
-    const mint = new web3.PublicKey("9JRFRgDz5b76RQ5ysQa836SeRbKikSkVTXu9g4oaCYTx");
+    const mint = new web3.PublicKey("GtwwPPjeCFoEMJLSQ4hmQQUbHsk15PbAx6QU25UUBZjJ");
 
-    const umi = createUmi("https://api.devnet.solana.com");
+    const umi = createUmi("https://api.mainnet-beta.solana.com");
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair))
     umi.use(signerIdentity(signer, true))
 
     const ourMetadata = { 
         name: "Kavin", 
-        symbol: "KN",
+        symbol: "KVN",
         uri: "https://raw.githubusercontent.com/kavinthangavel/KVN-Token/main/metadata.json",
     }
     const onChainData = {
