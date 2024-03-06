@@ -108,7 +108,7 @@ Copy the output, which is an array of numbers, to import into Phantom Wallet:
 
 ![Wallet Balance](https://raw.githubusercontent.com/kavinthangavel/KVN-Token/main/assets/balance.png)
 
-Wallet SOL Address : `KVNmDjP8vhUTCk6toCtLu5gXDurV5CJfX6JGgbrBzsJ`
+My Wallet Address : `KVNmDjP8vhUTCk6toCtLu5gXDurV5CJfX6JGgbrBzsJ`
 
 Send Me Your Token After Creating 😊🥳
 
