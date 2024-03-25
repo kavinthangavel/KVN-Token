@@ -48,6 +48,12 @@ You Can Change it to devnet,testnet,mainnet-beta. (Devnet in our Case)
 solana config set --url https://api.devnet.solana.com
 ```
 
+**Select Your Keypair For Airdrop** 
+
+```bash
+solana config set -ud -k .\KVN______________.json
+```
+
 ### Step 3: Request Airdrop 💸
 
 Request an airdrop of 2 SOL to your account on the Devnet.
