@@ -80,10 +80,10 @@ spl-token create-token -p TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
 
 ### Step 5: Run Your TypeScript File 📜
 
-After adjusting addresses and keys in `mpl_token22.ts`, execute it:
+After adjusting addresses and keys in `spl_token22.ts`, execute it:
 
 ```bash
-ts-node ./mpl_token22.ts
+ts-node ./spl_token22.ts
 ```
 
 ### Step 6: Mint Tokens 🔨
