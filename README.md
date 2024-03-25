@@ -24,6 +24,14 @@ solana-keygen grind --starts-with KVN:1
 
 Rename your key pair file to `KVN__________.json` for easier reference.
 
+### Step 1(a): Generate a Mint Key Pair 🔑
+
+Generate a key pair that starts with a specific prefix (e.g., "KV"). This command searches for a key pair that meets the criteria, which can take some time.
+
+```bash
+solana-keygen grind --starts-with KV:1
+```
+
 ### Step 2: Configure Solana CLI ⚙️
 
 Set the Solana CLI to use your newly generated key pair.
