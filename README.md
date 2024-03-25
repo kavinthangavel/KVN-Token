@@ -7,8 +7,9 @@ This guide outlines the process for creating and managing SPL Token-2022 on the 
 Before starting, ensure you have installed the following tools:
 
 - **Solana CLI**: [Installation Guide 🛠️](https://docs.solana.com/cli/install-solana-cli-tools)
-- **SPL Token CLI**: Follow the instructions in the Solana documentation or install it via npm with `npm install -g @solana/spl-token`
 - **Node.js**: [Download Page 📥](https://nodejs.org/)
+- **Mpl Token Metadata**: Install via npm with `npm install @metaplex-foundation/mpl-token-metadata`
+- **SPL Token CLI**: Follow the instructions in the Solana documentation or install it via npm with `npm install -g @solana/spl-token`
 - **`ts-node`**: Install via npm with `npm install -g ts-node`
 
 ## Getting Started 🌟
